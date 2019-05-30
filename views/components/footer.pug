@@ -1,10 +1,27 @@
 //- .divider.hide-on-med-and-down
 //- footer.page-footer.white.hide-on-med-and-down
-.divider
-footer.page-footer.white
+//- .divider
+footer.page-footer.teal
     .container
-        h4.header.light.teal-text Raibow Creations
-        p.light.black-text Nagpur
-    .footer-copyright
-        .container
-            a(href="http://root-kings.github.io") Designed by R00t
+        .row
+            .col.s12.m8
+                h5.header.light Rainbow Creations
+                p.light Nagpur
+                p.light Phone: #[a.white-text.strong(href="tel:123456789") +91 123 456 7890]
+                p.light Email: #[a.white-text.strong(href="mailto:contact@rainbow-creations.com") contact@rainbow-creations.com]
+            .col.s12.m4
+                //- h5.light Links
+                ul
+                    li
+                        a.teal-text.text-lighten-4(href="/") Home
+                    li
+                        a.teal-text.text-lighten-4(href="/artwork") Artwork
+                    li
+                        a.teal-text.text-lighten-4(href="/portfolio") Portfolio
+                    //- li
+                        a.teal-text.text-lighten-4(href="/about") About
+                    li
+                        a.teal-text.text-lighten-4(href="/contact") Contact
+    .footer-copyright.teal.lighten-1
+        .container.center &copy 2019 Rainbow Creations. 
+            a(href="http://root-kings.github.io") Designed by Root.
