@@ -1,22 +1,102 @@
+ul#artwork-dropdown.dropdown-content
+    li
+        a.brown-text(href="/artwork#wall-art") Wall Art
+    li
+        a.brown-text(href="/artwork#canvas-painting") Canvas Paintings
+    li
+        a.brown-text(href="/artwork#illustration") Illustrations
+    li
+        a.brown-text(href="/artwork#line-art") Line Art
+    li
+        a.brown-text(href="/artwork#gift") Personalized Gifts
+
+        
+
 .navbar-fixed
-    nav.white.z-depth-0
+    //- nav.white.z-depth-0
+    nav.white
         .nav-wrapper
-            a.teal-text(data-target="slide-out" href="#").sidenav-trigger
+            a.brown-text(data-target="slide-out" href="#").sidenav-trigger
                 i.material-icons menu
-            a.teal-text.brand-logo(href="/") Bhuvan
+            a.brown-text.brand-logo(href="/")
+                img(src="/images/logo.png", alt="")
 
             ul.right.hide-on-med-and-down
                 li
-                    a.teal-text(href="/") Home
+                    a.brown-text(href="/#story") Story
 
                 li
-                    a.teal-text(href="/about") About
+                    a.dropdown-trigger.brown-text(href="/artwork", data-target="artwork-dropdown") Artwork
+                        i.material-icons.right arrow_drop_down
+                
+                li
+                    a.brown-text(href="/portfolio") Portfolio
+                
+                li
+                    a.brown-text(href="/testimonials") Testimonials
+
+                //- li
+                //-     a.brown-text(href="/services") Services
+
+                //- li
+                //-     a.brown-text(href="/events") Events
+
+                li
+                    a.brown-text(href="/inthemedia") In The Media
+                
+                li
+                    a.brown-text(href="/contact") Contact Us
+
+
+
+
 
 
 ul#slide-out.sidenav
-    li
+    //- li
         a(href="/") Home
-            i.material-icons.left home
+            //- i.material-icons.left home
+
     li
-        a(href="/about") About
-            i.material-icons.left info
+        a.brown-text(href="/") Story
+
+    li
+        //- a.brown-text(href="/Artwork") Artwork
+        ul.collapsible
+            li.collapsible-item
+                .collapsible-header.brown-text(style="padding: 0px 32px; font-weight: 500;") Artwork
+                    i.material-icons.right arrow_drop_down
+                .collapsible-body
+                    ul
+                        li
+                            a.brown-text(href="#") Wall Art
+                        li
+                            a.brown-text(href="#") Canvas Paintings
+                        li
+                            a.brown-text(href="#") Illustrations
+                        li
+                            a.brown-text(href="#") Line Art
+                        li
+                            a.brown-text(href="#") Personalized Gifts
+
+
+
+    
+    li
+        a.brown-text(href="/portfolio") Portfolio
+    
+    //- li
+    //-     a.brown-text(href="/products") Products
+
+    //- li
+    //-     a.brown-text(href="/services") Services
+
+    //- li
+    //-     a.brown-text(href="/events") Events
+
+    li
+        a.brown-text(href="/about") About
+
+    li
+        a.brown-text(href="/contact") Contact
+
