@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
+    "build": "gulp",
     "dev": "concurrently --kill-others \"gulp dev\" \"nodemon -r dotenv/config index.js\""
   },
   "repository": {
