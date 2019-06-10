@@ -1,10 +1,36 @@
-extends components/layout.pug
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Bhuvan
+        link(rel="icon", href="/favicon.ico", type="image/x-icon")
+        link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+        include components/styles.pug
+        
 
-block styles
+    body
+       
+        main.valign-wrapper.burning-orange
+            .container
+                .row
+                    .col.s12.m6.offset-m3.l4.offset-l4
+                        .card-panel
+                            h3.center.no-margin Bhuvan
+                            h5.center Login
+                            .input-field
+                                input#username(type="text", name="username")
+                                label(for="username") Username
 
-block content
-    h5.center LOGIN
+                            .input-field
+                                input#password(type="password", name="password")
+                                label(for="password") Password
+                            
+                            .full-width.center
+                                .btn.curvy Login
 
 
-block scripts
+        
 
+        include components/scripts.pug
+        
